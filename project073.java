@@ -15,7 +15,7 @@ for(int j = 2; j <= numberOfRows - i; j ++ ) {
 System.out.print(j + " ");
 };
 
-System.out.println();
+System.out.println( );
 }
 }
 }
