@@ -1,21 +1,24 @@
-package domrabinformatika;
+package domrab;
 
 import java.util.Scanner;
 
 public class project073 {
 
-public static void main(String[] args) {
-Scanner sc = new Scanner (System.in);
-int numberOfRows = 7;
-for (int i = 0; i < numberOfRows; i++) {
-for(int j = numberOfRows - i; j>0; j-- ) {
-System.out.print(j + " ");
-}
-for(int j = 2; j <= numberOfRows - i; j ++ ) {
-System.out.print(j + " ");
-};
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 
-System.out.println( );
-}
-}
-}
+	    Scanner sc = new Scanner (System.in);
+
+	    System.out.println("Enter integrer");
+	    int numberRows = sc.nextInt();
+	    for (int i=0;i < numberRows; i++){
+	      for (int j = numberRows - i; j>0; j--){
+	        System.out.print(j + " ");
+	      }
+	      for ( int j = 2; j <= numberRows - i; j++){
+	        System.out.print(j + " ");
+	      }
+	      System.out.println();
+	    }
+	  }
+	}
