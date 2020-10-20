@@ -1,19 +1,20 @@
-package domrabinformatika;
+package domrab;
 
 import java.util.Scanner;
 public class FinalExamExcuse {
 
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         System.out.println("This program will determine if you can get out of the final exam.");
         System.out.println("Please answer the following questions:");
         System.out.println("What is your average in the class?");
-        double average = Double.parseDouble(scanner.nextLine());
-
+        double average = sc.nextDouble();
+        sc.nextLine();
         System.out.println("How many class lectures have you missed?");
-        int daysAbsent = Integer.parseInt(scanner.nextLine());
+        int daysAbsent = sc.nextInt();
+        sc.nextLine();
 
         if(average >= 90 && daysAbsent <= 3 || average >= 80 && daysAbsent <= 0){
 
