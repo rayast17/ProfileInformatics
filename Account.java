@@ -10,6 +10,13 @@ public class Account {
 	
 	private static double yearInterestRate = 4.5;
 	
+	Account(){	
+	}
+	
+	Account(int id, double balance){
+		this.setId(id);
+		this.setBalance(balance);
+	}
 	
 	public int getId() {
 		return id;
@@ -41,16 +48,6 @@ public class Account {
 
 	public static void setYearInterestRate(double yearInterestRate) {
 		Account.yearInterestRate = yearInterestRate;
-	}
-	
-	
-	
-	Account(){	
-	}
-	
-	Account(int id, double balance){
-		this.setId(id);
-		this.setBalance(balance);
 	}
 	
 	public static double getMonthlyInterestRate() {
